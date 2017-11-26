@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dryer.project.sliit.dryer.Activity_OneRack">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:padding="1dp"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="11dp">
+
+        <TextView
+            android:id="@+id/one_rack_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Rack ID:"
+            android:textColor="#000"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/one_rack_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/one_rack_id"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Percentage:"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/button_try_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="33dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="TRY AGAIN"
+            android:textColor="@color/colorWhite" />
+
+        <ListView
+            android:id="@+id/list_rack_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/one_rack_id"
+            android:layout_alignStart="@+id/one_rack_id"
+            android:layout_below="@+id/button_try_again"
+            android:layout_marginTop="43dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="2dp"
+            android:padding="1dp"
+
+            >
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/one_rack_ratio"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+
+            android:gravity="left"
+            android:text="Ironed percentage is not more than 75 please try again"
+            android:textColor="@color/colorPink" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

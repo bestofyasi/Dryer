@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/colorAccent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:padding="2dp">
+
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="Name"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <!--<TextView-->
+        <!--android:id="@+id/rackid"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="HomeTown"-->
+        <!--android:layout_below="@id/id"-->
+        <!--android:textColor="#ba0f0f"-->
+        <!--android:textSize="18dp"-->
+        <!--android:visibility="invisible"/>-->
+        <!--<TextView-->
+        <!--android:id="@+id/ratio"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="HomeTown"-->
+        <!--android:layout_below="@id/rackid"-->
+        <!--android:textColor="#517602"-->
+        <!--android:textSize="18dp"-->
+        <!--android:layout_margin="1dp"-->
+        <!--android:visibility="invisible"/>-->
+
+    </RelativeLayout>
+
+
+</LinearLayout>

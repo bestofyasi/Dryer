@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="1dp">
+
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/secondView"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="1dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_one_rack_before"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/one_rack_image_tag"
+                android:layout_marginTop="40dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img" />
+
+            <TextView
+                android:id="@+id/one_rack_image_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPink"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="BEFORE IRON"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/secondView"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="1dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_one_rack_after"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/one_rack_image_tag2"
+                android:layout_marginTop="40dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/img" />
+
+            <TextView
+                android:id="@+id/one_rack_image_tag2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPink"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="AFTER IRON"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
